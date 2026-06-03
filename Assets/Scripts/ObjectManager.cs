@@ -8,16 +8,16 @@ public class ObjectManager : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Q))
-            OffObject();
+            OnObject();
     }
 
     public void OffObject()
     {
-        transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        gameObject.SetActive(false);
     }
 
     public void OnObject()
     {
-        transform.localScale = new Vector3(1f, 1f, 1f);
+        gameObject.SetActive(true);
     }
 }
