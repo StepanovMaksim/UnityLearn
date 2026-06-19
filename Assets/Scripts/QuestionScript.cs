@@ -5,7 +5,6 @@ public class QuestionScript : MonoBehaviour
 {
     
     [SerializeField] GameObject _choiceButtons;
-    
     [SerializeField] GameObject _nextButtons;
     
     ManangerQuestions _manangerQuestions;
@@ -15,9 +14,7 @@ public class QuestionScript : MonoBehaviour
     private void Start()
     {
         
-        _responseCounter = transform.parent.GetComponent<ResponseCounter>()
-            ;
-
+        _responseCounter = transform.parent.GetComponent<ResponseCounter>();
         _manangerQuestions = transform.parent.GetComponent<ManangerQuestions>();
     }
 
@@ -39,10 +36,10 @@ public class QuestionScript : MonoBehaviour
         
     }
 
-// Update is called once per frame
-    void Update()
-    {
 
+    public void NextQuestion()
+    {
+        _manangerQuestions.NextQuestion();
     }
 
 }
