@@ -24,6 +24,7 @@ public class QuestionScript : MonoBehaviour
         
         _manangerQuestions.FalseChoice();
         _nextButtons.SetActive(true);
+        _responseCounter.CountFalse();
     }
 
 
