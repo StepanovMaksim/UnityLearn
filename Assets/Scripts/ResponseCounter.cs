@@ -1,9 +1,10 @@
 using TMPro;
 using UnityEngine;
 
-// Счетчик ответов игрока
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 public class ResponseCounter : MonoBehaviour
 {
+    [SerializeField] private GameObject[] _starImages; 
     [SerializeField] TextMeshProUGUI textCountFalse;
     [SerializeField] TextMeshProUGUI _textCount;
     int _count = 0;
@@ -24,12 +25,17 @@ public class ResponseCounter : MonoBehaviour
     }
     public void PlusCount()
     {
-        
+        ActiveStars();
         _count = _count + 1;
         _textCount.text = _count.ToString();
-    } 
+    }
 
-
+    void ActiveStars()
+    {
+        _starImages[_count].SetActive(true);
+        
+    }
+       
 }
 
    

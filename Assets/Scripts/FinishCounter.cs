@@ -1,10 +1,10 @@
 using TMPro;
 using UnityEngine;
-// Счетчик ответов на финише
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 public class FinishCounter : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI _trueChoice;  // "Верно ответов: "
-    [SerializeField] TextMeshProUGUI _falseChoice;  // "Неверно ответов: "
+    [SerializeField] TextMeshProUGUI _trueChoice;  // "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "
+    [SerializeField] TextMeshProUGUI _falseChoice;  // "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "
 
     ResponseCounter _responseCounter;
 
@@ -13,6 +13,7 @@ public class FinishCounter : MonoBehaviour
     {
         _responseCounter = transform.parent.GetComponent<ResponseCounter>();
         _trueChoice.text = _trueChoice.text + _responseCounter.TrueChoice();
+        _falseChoice.text = _falseChoice.text + _responseCounter.FalseChoice();
     }
 
 

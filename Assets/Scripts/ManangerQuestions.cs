@@ -1,5 +1,5 @@
 using UnityEngine;
-// Скрипт для управления окнами
+// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 public class ManangerQuestions : MonoBehaviour
 {
     [SerializeField] GameObject _no;
@@ -18,6 +18,8 @@ public class ManangerQuestions : MonoBehaviour
         _questions[_number].SetActive(false);
         _number = _number + 1; // _number = 0 + 1
         _questions[_number].SetActive(true);
+        _yes.SetActive(false);
+        _no.SetActive(false);
     }
 
     public void FalseChoice()
