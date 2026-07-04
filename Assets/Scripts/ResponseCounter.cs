@@ -4,6 +4,7 @@ using UnityEngine;
 // ������� ������� ������
 public class ResponseCounter : MonoBehaviour
 {
+    [SerializeField] private GameObject[] _heartimages;
     [SerializeField] private GameObject[] _starImages; 
     [SerializeField] TextMeshProUGUI textCountFalse;
     [SerializeField] TextMeshProUGUI _textCount;
@@ -20,8 +21,10 @@ public class ResponseCounter : MonoBehaviour
     }
     public void CountFalse()
     {
+        ActiveHearts();
         _countFalse = _countFalse + 1;
         textCountFalse.text = _countFalse.ToString();
+        
     }
     public void PlusCount()
     {
@@ -35,7 +38,13 @@ public class ResponseCounter : MonoBehaviour
         _starImages[_count].SetActive(true);
         
     }
+
+    void ActiveHearts()
+    {
+        _heartimages[_countFalse].SetActive(true);
+    }     
        
 }
+
 
    

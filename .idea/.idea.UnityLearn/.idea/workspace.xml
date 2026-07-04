@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="87aa9287-8d7f-43f6-9791-17d6dd2e4ca4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animatorfalse.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animatorfalse.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/1Question.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/1Question.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1Scene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1Scene 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/2Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManangerQuestions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManangerQuestions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ResponseCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ResponseCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,6 +104,10 @@
       <workItem from="1781876017878" duration="1954000" />
       <workItem from="1782492883442" duration="44000" />
       <workItem from="1782493013175" duration="884000" />
+      <workItem from="1783168500834" duration="310000" />
+      <workItem from="1783172556321" duration="33000" />
+      <workItem from="1783175242008" duration="997000" />
+      <workItem from="1783180893919" duration="430000" />
     </task>
     <servers />
   </component>
