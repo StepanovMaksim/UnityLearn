@@ -12,8 +12,8 @@ public class FinishCounter : MonoBehaviour
     void Start()
     {
         _responseCounter = transform.parent.GetComponent<ResponseCounter>();
-        _trueChoice.text = _trueChoice.text + _responseCounter.TrueChoice();
-        _falseChoice.text = _falseChoice.text + _responseCounter.FalseChoice();
+        _trueChoice.text =   _responseCounter.TrueChoice().ToString();
+        _falseChoice.text =   _responseCounter.FalseChoice().ToString();
     }
 
 

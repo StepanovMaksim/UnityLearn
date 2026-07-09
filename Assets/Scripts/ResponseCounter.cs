@@ -3,7 +3,10 @@ using UnityEngine;
 
 // ������� ������� ������
 public class ResponseCounter : MonoBehaviour
-{
+    
+{  
+    [SerializeField] private GameObject[]  _finishHeartImages;
+    [SerializeField] private GameObject[]  _finishStarsImages;
     [SerializeField] private GameObject[] _starImages; 
     [SerializeField] private GameObject[] _heartImages;
     [SerializeField] TextMeshProUGUI textCountFalse;
@@ -20,9 +23,11 @@ public class ResponseCounter : MonoBehaviour
         return _countFalse;
     }
     public void CountFalse()
-    {
-        ActiveHearts();
+    
+    {      ActiveHearts();
+        
         _countFalse = _countFalse + 1;
+        
         textCountFalse.text = _countFalse.ToString();
         
     }
@@ -35,13 +40,15 @@ public class ResponseCounter : MonoBehaviour
 
     void ActiveStars()
     {
+        _finishStarsImages[_count].SetActive(true);
         _starImages[_count].SetActive(true);
         
     }
 
     void ActiveHearts()
     {
-        _heartImages[_countFalse].SetActive(true);
+        _finishHeartImages[_countFalse].SetActive(false);
+        _heartImages[_countFalse].SetActive(false);
     }     
        
 }
