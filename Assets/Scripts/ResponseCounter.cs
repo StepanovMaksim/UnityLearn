@@ -9,12 +9,13 @@ public class ResponseCounter : MonoBehaviour
     [SerializeField] private GameObject[] _finishStarsImages;
     [SerializeField] private GameObject[] _starImages;
     [SerializeField] private GameObject[] _heartImages;
-
     [SerializeField] TextMeshProUGUI textCountFalse;
     [SerializeField] TextMeshProUGUI _textCount;
     [Header("Эффекты")]
     [SerializeField] GameObject _effectTrue;
     [SerializeField] GameObject _effectFalse;
+    [Header("Герой")] 
+    [SerializeField] HeroAnimator _heroAnimator;
     int _count = 0;
     int _countFalse = 0;
     public int TrueChoice()
@@ -42,6 +43,7 @@ public class ResponseCounter : MonoBehaviour
         _count = _count + 1;
         _textCount.text = _count.ToString();
         _effectTrue.SetActive(true);
+        _heroAnimator.RigthChoise();
     }
 
     void ActiveStars()

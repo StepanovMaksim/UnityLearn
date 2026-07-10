@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87aa9287-8d7f-43f6-9791-17d6dd2e4ca4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/BodiesPBRDefault.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/BodiesPBRDefault.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/HeadsPBRDefault.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/HeadsPBRDefault.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/WeaponsPBRDefault.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/WeaponsPBRDefault.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/HeroDefault.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/HeroDefault.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ResponseCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ResponseCounter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +110,8 @@
       <workItem from="1783180893919" duration="430000" />
       <workItem from="1783516518912" duration="1737000" />
       <workItem from="1783616879663" duration="1386000" />
+      <workItem from="1783701083625" duration="6000" />
+      <workItem from="1783701105429" duration="665000" />
     </task>
     <servers />
   </component>
