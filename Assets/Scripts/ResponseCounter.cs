@@ -14,7 +14,7 @@ public class ResponseCounter : MonoBehaviour
     [SerializeField] TextMeshProUGUI _textCount;
     [Header("Эффекты")]
     [SerializeField] GameObject _effectTrue;
-
+    [SerializeField] GameObject _effectFalse;
     int _count = 0;
     int _countFalse = 0;
     public int TrueChoice()
@@ -28,11 +28,13 @@ public class ResponseCounter : MonoBehaviour
     }
     public void CountFalse()
     {
+        
         ActiveHearts();
 
         _countFalse = _countFalse + 1;
 
         textCountFalse.text = _countFalse.ToString();
+        _effectFalse.SetActive(true);
     }
     public void PlusCount()
     {
