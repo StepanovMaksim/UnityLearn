@@ -6,12 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="87aa9287-8d7f-43f6-9791-17d6dd2e4ca4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/BodiesPBRDefault.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/BodiesPBRDefault.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/HeadsPBRDefault.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/HeadsPBRDefault.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/WeaponsPBRDefault.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Material/PBRDefault/WeaponsPBRDefault.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/HeroDefault.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Prefab/Character/PBRDefault/HeroDefault.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Question.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Question.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Animator/SmokeGrenadeAnimator 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BattleRoyaleHeroesPBR/Animator/SmokeGrenadeAnimator 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Pro-SuperCasual/Scripts/HeroAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Pro-SuperCasual/Scripts/HeroAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/1Question.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/1Question.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/2Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ResponseCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ResponseCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +48,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Downloads/игра на продажу моя\Rocket.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Az\Downloads\игра на продажу моя" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\Az\Documents\GitHub\1Unity\UnityLearn -debugCodeOptimization" />
@@ -111,7 +122,9 @@
       <workItem from="1783516518912" duration="1737000" />
       <workItem from="1783616879663" duration="1386000" />
       <workItem from="1783701083625" duration="6000" />
-      <workItem from="1783701105429" duration="665000" />
+      <workItem from="1783701105429" duration="1337000" />
+      <workItem from="1783942752196" duration="583000" />
+      <workItem from="1783956299106" duration="1558000" />
     </task>
     <servers />
   </component>

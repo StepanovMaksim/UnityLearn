@@ -36,6 +36,7 @@ public class ResponseCounter : MonoBehaviour
 
         textCountFalse.text = _countFalse.ToString();
         _effectFalse.SetActive(true);
+        _heroAnimator.FalseChoise();
     }
     public void PlusCount()
     {

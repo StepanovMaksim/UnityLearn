@@ -8,4 +8,16 @@ public class HeroAnimator : MonoBehaviour
     {
         _heroAnimator.SetTrigger("RightChoise");
     }
+     public void FalseChoise()
+    
+       {
+          
+           _heroAnimator.SetTrigger("FalseChoise");
+       }
+       
+    
+    
 }
+
+
+   
