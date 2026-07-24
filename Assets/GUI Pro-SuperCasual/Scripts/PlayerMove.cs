@@ -19,5 +19,9 @@ public class PlayerMove : MonoBehaviour
         float z = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(x, 0, z);
         _controller.Move(movement * _speed * Time.deltaTime);
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            _speed *=3 ;
+        if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
+            _speed /= 3 ;
     }
 }
