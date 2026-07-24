@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="87aa9287-8d7f-43f6-9791-17d6dd2e4ca4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Pro-SuperCasual/Scripts/Camerarotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Pro-SuperCasual/Scripts/Camerarotation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GUI Pro-SuperCasual/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Pro-SuperCasual/Scripts/PlayerMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneShooter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneShooter.unity" afterDir="false" />
     </list>
@@ -120,7 +121,7 @@
       <workItem from="1783956299106" duration="1558000" />
       <workItem from="1784733929170" duration="100000" />
       <workItem from="1784734054866" duration="2411000" />
-      <workItem from="1784905616119" duration="387000" />
+      <workItem from="1784905616119" duration="3590000" />
     </task>
     <servers />
   </component>
