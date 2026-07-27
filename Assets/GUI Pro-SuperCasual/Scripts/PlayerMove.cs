@@ -22,7 +22,7 @@ public class PlayerMove : MonoBehaviour
         if (_isGrounded && _velocity.y < 0)
             _velocity.y = -2f;
         if (Input.GetKeyDown(KeyCode.Space)&& _isGrounded)
-                                          _velocity.y = Mathf.Sqrt(_jumpHeight * -2f * _gravity);
+                                          _velocity.y = Mathf.Sqrt(_jumpHeight * 2f * _gravity);
         _velocity.y -= _gravity * Time.deltaTime;
         _controller.Move(_velocity * Time.deltaTime); 
         float x = Input.GetAxis("Horizontal");
