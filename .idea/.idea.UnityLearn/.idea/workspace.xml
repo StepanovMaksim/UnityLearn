@@ -7,6 +7,10 @@
     <list default="true" id="87aa9287-8d7f-43f6-9791-17d6dd2e4ca4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GUI Pro-SuperCasual/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Pro-SuperCasual/Scripts/PlayerMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Park.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Park.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Park.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Park.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneShooter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneShooter.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +124,8 @@
       <workItem from="1784733929170" duration="100000" />
       <workItem from="1784734054866" duration="2411000" />
       <workItem from="1784905616119" duration="4096000" />
+      <workItem from="1785170642108" duration="615000" />
+      <workItem from="1785342917517" duration="2472000" />
     </task>
     <servers />
   </component>

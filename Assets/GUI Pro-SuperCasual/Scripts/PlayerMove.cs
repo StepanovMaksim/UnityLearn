@@ -18,13 +18,14 @@ public class PlayerMove : MonoBehaviour
     
     void Update()
     {
-        _isGrounded = _controller.isGrounded;
+        
         if (_isGrounded && _velocity.y < 0)
             _velocity.y = -2f;
         if (Input.GetKeyDown(KeyCode.Space)&& _isGrounded)
-                                          _velocity.y = Mathf.Sqrt(_jumpHeight * 2f * _gravity);
+            _velocity.y = Mathf.Sqrt(_jumpHeight * 2f * _gravity);
         _velocity.y -= _gravity * Time.deltaTime;
-        _controller.Move(_velocity * Time.deltaTime); 
+        _controller.Move(_velocity * Time.deltaTime);
+        _isGrounded = _controller.isGrounded;
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         Vector3 movement = transform.right * x + transform.forward * z;
