@@ -10,7 +10,7 @@ public class BulletScript : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
-        _rb.AddForce(transform.forward * _speed, ForceMode.Impulse);
+        _rb.AddForce(transform.up * _speed, ForceMode.Impulse);
         
     }
 }
