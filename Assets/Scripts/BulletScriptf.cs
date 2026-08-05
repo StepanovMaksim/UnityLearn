@@ -25,7 +25,7 @@ public class Script : MonoBehaviour
         Rigidbody rb = newBullet.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.AddForce(transform.forward * 100000000, ForceMode.Impulse);
+            rb.AddForce(transform.forward * 100, ForceMode.Impulse);
         }
     }
 }

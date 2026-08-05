@@ -4,16 +4,23 @@ public class GunScript : MonoBehaviour
 {
     [SerializeField] GameObject _bullet;
     [SerializeField] Transform _bulletSpawn;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    [SerializeField] private float _fireRate = 0.1f; 
+     
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-            Instantiate(_bullet,  _bulletSpawn.position,  _bulletSpawn.rotation);
+        
+        if (Input.GetMouseButton(0) && 0 >= _fireRate)
+        {
+            if 
+            Instantiate(_bullet, _bulletSpawn.position, _bulletSpawn.rotation);
+           
+        }
     }
 }
