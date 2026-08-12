@@ -4,6 +4,7 @@ public class GunScript : MonoBehaviour
 {
     
     [SerializeField] GameObject _bullet;
+    [SerializeField] GameObject _fireEffect;
     [SerializeField] Transform _bulletSpawn;
 
     [SerializeField] private float _fireRate = 0.1f;
@@ -25,6 +26,7 @@ public class GunScript : MonoBehaviour
             else
             {
                  Instantiate(_bullet, _bulletSpawn.position, _bulletSpawn.rotation);
+                 Instantiate(_fireEffect, _bulletSpawn.position, _bulletSpawn.rotation);
                  _fireRate = _nextFire;
             }
            

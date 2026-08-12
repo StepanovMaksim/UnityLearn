@@ -4,18 +4,15 @@ public class GunScript2 : MonoBehaviour
 {
     [SerializeField] GameObject _bullet;
     [SerializeField] Transform _bulletSpawn;
-    [SerializeField] float _fireRate = 0.5f;   
-    [SerializeField] float _bulletSpeed = 15f; 
-    
+    [SerializeField] float _fireRate = 0.5f;
 
-    void Start()
-    {
-        
-    }
+    // —сылка на Animator (перетащи сюда компонент Animator в инспекторе)
+    [SerializeField] private Animator _animator;
+
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)  )
+        if (Input.GetMouseButtonDown(0))
         {
             Shoot();
         }
@@ -23,16 +20,13 @@ public class GunScript2 : MonoBehaviour
 
     void Shoot()
     {
-        GameObject newBullet = Instantiate(_bullet, _bulletSpawn.position, _bulletSpawn.rotation);
-        
-        
-        if (newBullet.TryGetComponent<Rigidbody>(out Rigidbody rb))
+        // ≈сли Animator назначен Ч запускаем триггер дл€ анимации выстрела
+        if (_animator != null)
         {
-            rb.linearVelocity = _bulletSpawn.right * _bulletSpeed; 
-            
+            _animator.SetTrigger("Shoot");
         }
-    }
-    
-}
-    
 
+        GameObject newBullet = Instantiate(_bullet, _bulletSpawn.position, _bulletSpawn.rotation);
+
+    }
+}
