@@ -14,11 +14,11 @@ public class BulletScript : MonoBehaviour
         _rb.AddForce(transform.up * _speed, ForceMode.Impulse);
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        Instantiate(_bulletEffect, transform.position, transform.rotation);
-        Destroy(gameObject);
-    }
+   // private void OnCollisionEnter(Collision collision)
+    //{
+     //   Instantiate(_bulletEffect, transform.position, transform.rotation);
+     //   Destroy(gameObject);
+    //}
 }
         
     

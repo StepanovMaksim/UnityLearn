@@ -2,31 +2,42 @@ using UnityEngine;
 
 public class GunScript2 : MonoBehaviour
 {
+    
+    public float spreadAngle = 5f;
+    public int pelletsCount = 8;
     [SerializeField] GameObject _bullet;
     [SerializeField] Transform _bulletSpawn;
     [SerializeField] float _fireRate = 0.5f;
-
-    // Ссылка на Animator (перетащи сюда компонент Animator в инспекторе)
+    [SerializeField] GameObject _fireEffect;
+    // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ Animator (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Animator пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
     [SerializeField] private Animator _animator;
 
 
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(0))
         {
             Shoot();
+            _animator.SetTrigger("Shoot");
         }
     }
 
     void Shoot()
     {
-        // Если Animator назначен — запускаем триггер для анимации выстрела
-        if (_animator != null)
+        
+        for (int i = 0; i < pelletsCount; i++)
         {
-            _animator.SetTrigger("Shoot");
+            // Р Р°СЃСЃС‡РёС‚С‹РІР°РµРј СЃР»СѓС‡Р°Р№РЅС‹Р№ СѓРіРѕР» СЂР°Р·Р±СЂРѕСЃР°
+            float randomX = Random.Range(-spreadAngle, spreadAngle);
+            float randomY = Random.Range(-spreadAngle, spreadAngle);
+            Quaternion spreadRotation = Quaternion.Euler(randomX, 0, randomY);
+
+            // РС‚РѕРіРѕРІРѕРµ РЅР°РїСЂР°РІР»РµРЅРёРµ РїСѓР»Рё СЃ СѓС‡РµС‚РѕРј СЂР°Р·Р±СЂРѕСЃР°
+            Quaternion finalRotation = _bulletSpawn.rotation * spreadRotation;
+
+            // РЎРїР°РІРЅРёРј РєР°Р¶РґСѓСЋ РїСѓР»СЋ РєР°Рє РѕС‚РґРµР»СЊРЅС‹Р№ GameObject
+            GameObject pellet = Instantiate(_bullet, _bulletSpawn.position, finalRotation);
         }
-
-        GameObject newBullet = Instantiate(_bullet, _bulletSpawn.position, _bulletSpawn.rotation);
-
     }
 }
