@@ -11,15 +11,16 @@ public class GunScript2 : MonoBehaviour
     [SerializeField] GameObject _fireEffect;
     // ������ �� Animator (�������� ���� ��������� Animator � ����������)
     [SerializeField] private Animator _animator;
-
+    private float _nextFireTime = 0f;
 
     void Update()
     {
-        
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Time.time >= _nextFireTime)
         {
             Shoot();
             _animator.SetTrigger("Shoot");
+            
+            _nextFireTime = Time.time + 2f; 
         }
     }
 
@@ -38,6 +39,7 @@ public class GunScript2 : MonoBehaviour
 
             // Спавним каждую пулю как отдельный GameObject
             GameObject pellet = Instantiate(_bullet, _bulletSpawn.position, finalRotation);
+            Instantiate(_fireEffect, _bulletSpawn.position, _bulletSpawn.rotation);
         }
     }
 }
