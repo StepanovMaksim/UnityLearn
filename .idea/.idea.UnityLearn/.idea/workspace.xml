@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="87aa9287-8d7f-43f6-9791-17d6dd2e4ca4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GunScript2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GunScript2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneShooter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneShooter.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +17,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Teleport1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -130,6 +135,7 @@
       <workItem from="1786545996937" duration="4744000" />
       <workItem from="1786635010217" duration="7880000" />
       <workItem from="1786977142151" duration="752000" />
+      <workItem from="1786984346858" duration="3125000" />
     </task>
     <servers />
   </component>
