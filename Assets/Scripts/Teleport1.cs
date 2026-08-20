@@ -1,12 +1,15 @@
-using System;
 using UnityEngine;
 
 public class Teleport1 : MonoBehaviour
 {
-    [SerializeField] private Transform teleports1;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private Transform targetPoint;
+    [SerializeField] private Vector3 spawnOffset = new Vector3(2f, 0f, 0f);
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) other.transform.position = teleports1.position;
+        if (other.CompareTag("Player") && targetPoint != null)
+        {
+            other.transform.position = targetPoint.position + spawnOffset;
+        }
     }
 }
