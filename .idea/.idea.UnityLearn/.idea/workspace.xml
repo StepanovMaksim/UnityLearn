@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87aa9287-8d7f-43f6-9791-17d6dd2e4ca4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GunMananger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GunMananger.cs" afterDir="false" />
-    </list>
+    <list default="true" id="87aa9287-8d7f-43f6-9791-17d6dd2e4ca4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +131,7 @@
       <workItem from="1786635010217" duration="7880000" />
       <workItem from="1786977142151" duration="752000" />
       <workItem from="1786984346858" duration="3601000" />
-      <workItem from="1787227246666" duration="5084000" />
+      <workItem from="1787227246666" duration="5466000" />
     </task>
     <servers />
   </component>
