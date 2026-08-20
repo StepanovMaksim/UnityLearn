@@ -19,14 +19,12 @@ public class GunMananger : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             ActiveGun(0);
-            _camera.fieldOfView = 60f;
         }
 
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             ActiveGun(1);
-            _camera.fieldOfView = 60f;
         }
 
 
