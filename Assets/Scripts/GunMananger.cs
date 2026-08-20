@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class GunMananger : MonoBehaviour
 {
-    [SerializeField] private GameObject _Gun1;
-    [SerializeField] private GameObject _Gun2;
+    [SerializeField] private GameObject[] _guns;
     [SerializeField]  Camera _camera;
-    [SerializeField] float _cameraDistance;
     [SerializeField]  Transform _aimTransform;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] float _cameraDistance;
+    int _gunIndex; // номер активного оружия
+
+    private void Start()
     {
+        ActiveGun(0);
     }
 
     // Update is called once per frame
@@ -17,28 +18,44 @@ public class GunMananger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            _Gun2.SetActive(true);
-            _Gun1.SetActive(false);
+            ActiveGun(0);
+            _camera.fieldOfView = 60f;
         }
 
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            _Gun2.SetActive(false);
-            _Gun1.SetActive(true);
+            ActiveGun(1);
+            _camera.fieldOfView = 60f;
         }
+
+
 
         if (Input.GetMouseButtonDown(1))
         {
             _camera.fieldOfView = _cameraDistance;
-            
+            _guns[_gunIndex].transform.position = _aimTransform.position;
         }
 
         if (Input.GetMouseButtonUp(1))
         {
              _camera.fieldOfView = 60f;
         }
-           
-    
-}
+    }
+
+    void ActiveGun(int index)
+    {
+        _gunIndex = index;
+        for (int i = 0; i < _guns.Length; i++)
+        {
+            if (_gunIndex == i)
+            {
+                _guns[i].SetActive(true);
+            }
+            else
+            {
+                _guns[i].SetActive(false);
+            }
+        }
+    }
 }
