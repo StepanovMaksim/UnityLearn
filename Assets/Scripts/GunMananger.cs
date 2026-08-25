@@ -6,7 +6,7 @@ public class GunMananger : MonoBehaviour
     [SerializeField]  Camera _camera;
     [SerializeField]  Transform _aimTransform;
     [SerializeField] float _cameraDistance;
-    int _gunIndex; // номер активного оружия
+    int _gunIndex; // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
     private void Start()
     {
@@ -28,7 +28,11 @@ public class GunMananger : MonoBehaviour
             ActiveGun(1);
             _camera.fieldOfView = 60f;
         }
-
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            ActiveGun(2);
+            _camera.fieldOfView = 60f;
+        }
 
 
         if (Input.GetMouseButtonDown(1))
