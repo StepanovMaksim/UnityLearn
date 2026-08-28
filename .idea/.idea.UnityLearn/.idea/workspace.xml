@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="87aa9287-8d7f-43f6-9791-17d6dd2e4ca4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneShooter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneShooter.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GunMananger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GunMananger.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +139,7 @@
       <workItem from="1787670153422" duration="4364000" />
       <workItem from="1787910222146" duration="567000" />
       <workItem from="1787916799515" duration="753000" />
-      <workItem from="1787924016526" duration="433000" />
+      <workItem from="1787924016526" duration="2915000" />
     </task>
     <servers />
   </component>
