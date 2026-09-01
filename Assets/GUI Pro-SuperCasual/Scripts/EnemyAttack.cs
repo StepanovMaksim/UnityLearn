@@ -27,4 +27,14 @@ public class EnemyAttack : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        
+    }
 }

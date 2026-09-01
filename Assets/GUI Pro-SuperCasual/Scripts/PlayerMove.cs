@@ -36,4 +36,9 @@ public class PlayerMove : MonoBehaviour
             _speed /= 3 ;
         
     }
+
+    public void TakeDamage()
+    {
+
+    }
 }
