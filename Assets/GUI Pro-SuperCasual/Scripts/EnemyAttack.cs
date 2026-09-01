@@ -15,8 +15,8 @@ public class EnemyAttack : MonoBehaviour
             // Проверяем, прошло ли время перезарядки атаки
             if (Time.time >= nextAttackTime)
             {
-                // Ищем компонент здоровья на игроке
-                HealPlayer healPlayer = collision.gameObject.GetComponent<HealPlayer>();
+                // Ищем ПРАВИЛЬНЫЙ компонент здоровья на игроке
+                HealPlayerScript healPlayer = collision.gameObject.GetComponent<HealPlayerScript>();
                 
                 if (healPlayer != null)
                 {
