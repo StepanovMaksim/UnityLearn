@@ -24,7 +24,7 @@ public class HealPlayerScript : MonoBehaviour
 
         if (_damageNow > 0)
         {
-            _imageTrigger.color = new Color(1f, 1f, 1f, _damageNow);
+            _imageTrigger.color = new Color(_imageTrigger.color.r, _imageTrigger.color.g, _imageTrigger.color.b, _damageNow);
             _damageNow -= Time.deltaTime/2f;
         }
 

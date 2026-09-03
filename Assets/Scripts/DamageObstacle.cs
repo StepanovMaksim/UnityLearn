@@ -11,5 +11,6 @@ public class DamageObstacle : MonoBehaviour
             collision.gameObject.GetComponent<CharacterController>().Move(Vector3.back*1f);
           //  collision.gameObject.transform.position = collision.gameObject.transform.forward - new Vector3(1f, 1f, 1f);  
         }
+
     }
 }
