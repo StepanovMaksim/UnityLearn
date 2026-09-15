@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="87aa9287-8d7f-43f6-9791-17d6dd2e4ca4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLearn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/Materials/Background1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/Materials/Background1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneShooter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneShooter.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealPlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealPlayerScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Teleport1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -141,6 +145,11 @@
       <workItem from="1787916799515" duration="753000" />
       <workItem from="1787924016526" duration="3190000" />
       <workItem from="1788276727002" duration="1516000" />
+      <workItem from="1789386381753" duration="1844000" />
+      <workItem from="1789400171232" duration="907000" />
+      <workItem from="1789403604505" duration="3246000" />
+      <workItem from="1789476700931" duration="2738000" />
+      <workItem from="1789491953055" duration="2346000" />
     </task>
     <servers />
   </component>
