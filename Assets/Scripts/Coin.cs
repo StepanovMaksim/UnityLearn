@@ -7,6 +7,7 @@ public class Coin : MonoBehaviour
     [SerializeField] private int _coinValue = 5; 
     [SerializeField] private float _speedRotate;
     private float startPosY;
+    bool _goUp = true;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -28,11 +29,23 @@ public class Coin : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate( Vector3.forward, Time.deltaTime * _speedRotate);
-        if (transform.position.y < startPosY+0.5f)
+        transform.Rotate( Vector3.forward, Time.deltaTime * _speedRotate); // вращаем монету
+        if (_goUp == true)
         {
-            transform.position = new Vector3( transform.position.x , transform.position.y + 1f*Time.deltaTime, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y + 1f * Time.deltaTime, transform.position.z);
+            if (transform.position.y > startPosY + 0.3f)  // проверяем, что высота меньше максимальной
+            {
+                _goUp = false;
+            }
         }
-        transform.position = new Vector3(transform.position.x , transform.position.y - 1f*Time.deltaTime , transform.position.z); 
+        else // _goUp == false
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y - 1f * Time.deltaTime, transform.position.z);
+            if (transform.position.y < startPosY - 0.3f)
+            {
+                _goUp = true;
+            }
+        }
+             
     }
 }
