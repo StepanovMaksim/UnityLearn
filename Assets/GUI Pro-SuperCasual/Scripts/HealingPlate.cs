@@ -46,11 +46,8 @@ public class HealingPlate : MonoBehaviour
         {
             // Внимание: если метод лечения в вашем HealPlayerScript называется иначе,
             // например AddHealth, то замените .Heal на .AddHealth
-<<<<<<< Updated upstream
        //     health.Heal(healAmount); 
-=======
             //health.Heal(healAmount); 
->>>>>>> Stashed changes
             yield return new WaitForSeconds(healInterval);
         }
     }
