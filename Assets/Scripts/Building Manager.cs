@@ -1,53 +1,41 @@
+using System.Linq;
 using UnityEngine;
 
-public class BuildingMananger : MonoBehaviour
+public class BuildingManager : MonoBehaviour
 {
-    [SerializeField] GameObject[] _buildings;
-    [SerializeField] int _numberOn;
+    [SerializeField] private GameObject[] _buildings;
     [SerializeField] private int[] _number1;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    [Header("Настройки размера")]
+    // Задайте здесь размер для активированных зданий (например, X: 1.5, Y: 1.5, Z: 1.5)
+    [SerializeField] private Vector3 _activeScale = new Vector3(1.5f, 1.5f, 1.5f);
+    // Обычный размер для выключенных или фоновых зданий
+    [SerializeField] private Vector3 _defaultScale = Vector3.one; 
+
     void Start()
     {
-        NumderBuildings();
+        RenderBuildings();
     }
 
-
-    void ForCicle()
+    void RenderBuildings()
     {
-
         for (int i = 0; i < _buildings.Length; i++)
         {
-            if (i < _numberOn)
-                _buildings[i].SetActive(true);
-            else
-                _buildings[i].SetActive(false);
-        }
-    }
+            // Проверяем, должно ли здание быть активным
+            bool shouldBeActive = _number1.Contains(i);
+            
+            // Включаем или выключаем объект
+            _buildings[i].SetActive(shouldBeActive);
 
-    void NumderBuildings()
-    {
-        // nubmber1 = [4,2,3,8]
-        for (int i = 0; i < _buildings.Length; i++)
-        {
-            for (int j = 0; j < _number1.Length; j++)
+            // Если здание включено — увеличиваем его, иначе — возвращаем стандартный размер
+            if (shouldBeActive)
             {
-                if (i == _number1[j])
-                {
-                    _buildings[i].SetActive(true);
-                    break;
-                }    
-                else 
-                    _buildings[i].SetActive(false);
+                _buildings[i].transform.localScale = _activeScale;
+            }
+            else
+            {
+                _buildings[i].transform.localScale = _defaultScale;
             }
         }
-
-
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
