@@ -15,9 +15,30 @@ public class TimeForCoroutine : MonoBehaviour
 
     IEnumerator BuildOn()
     {
-        yield return new WaitForSeconds(_time);
-        _build.SetActive(true);
-        yield return new WaitForSeconds(_time + 2f);
-        _build.SetActive(false);
+        while (true)
+        {
+            yield return new WaitForSeconds(_time);
+            _build.SetActive(true);
+            yield return new WaitForSeconds(_time);
+            _build.SetActive(false);
+        }
     }
+
+   /* void Update ()
+    {
+        if ( _time < 0)
+        {
+            _build.SetActive(true);
+            _time -= Time.deltaTime;
+            if (_time < -2)
+            {
+                _build.SetActive(false);
+            }
+        }
+        else
+        {
+            _time -= Time.deltaTime;
+        }
+    }*/
+  
 }
