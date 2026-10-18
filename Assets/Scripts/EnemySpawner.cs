@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -14,6 +15,17 @@ public class EnemySpawner : MonoBehaviour
     
     [Tooltip("Количество врагов, появляющихся одновременно")]
     [SerializeField] private int _enemiesPerWave = 3;
+
+    private bool _gameNow = true;
+    private void OnEnable()
+    {
+        TimerScript.GameOver +=GameOver;
+    }
+
+    private void OnDisable()
+    {
+        TimerScript.GameOver -=GameOver;
+    }
 
     private void Start()
     {
@@ -32,7 +44,7 @@ public class EnemySpawner : MonoBehaviour
         // Ожидание перед самым первым спавном после начала игры
         yield return new WaitForSeconds(_startDelay);
 
-        while (true)
+        while (_gameNow)
         {
             // Спавним сразу несколько врагов за один раз
             for (int i = 0; i < _enemiesPerWave; i++)
@@ -41,9 +53,15 @@ public class EnemySpawner : MonoBehaviour
                 // При желании сюда можно добавить случайное смещение Random.Range
                 Instantiate(_enemyPrefab, transform.position, Quaternion.identity);
             }
-
+            
             // Ожидание перед следующей волной
             yield return new WaitForSeconds(_spawnInterval);
         }
     }
+
+    void GameOver()
+    {
+        _gameNow = false;
+    }
+    
 }

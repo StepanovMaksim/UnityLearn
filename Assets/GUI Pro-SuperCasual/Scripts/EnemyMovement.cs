@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI; // Этот пункт обязателен, чтобы скрипт умел управлять навигацией
 
@@ -5,6 +6,16 @@ public class EnemyMovement : MonoBehaviour
 {
     private Transform playerTransform;
     private NavMeshAgent agent;
+    
+    private void OnEnable()
+    {
+        TimerScript.GameOver += DestroyEnemies;
+    }
+
+    private void OnDisable()
+    {
+        TimerScript.GameOver -= DestroyEnemies;
+    }
 
     void Start()
     {
@@ -33,4 +44,10 @@ public class EnemyMovement : MonoBehaviour
             agent.SetDestination(playerTransform.position);
         }
     }
+
+    void DestroyEnemies()
+    {
+        Destroy(gameObject);
+    }
+    
 }
