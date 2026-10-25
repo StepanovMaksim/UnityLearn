@@ -21,12 +21,6 @@ public class HealPlayerScript : MonoBehaviour
 
     void Update()
     {
-      //  if (Input.GetKeyDown(KeyCode.P))
-        {
-          //  _healthSlider.value = _healthSlider.value - 1;
-           // TextHeal();
-        }
-
         if (_damageNow > 0)
         {
             _imageTrigger.color = new Color(_imageTrigger.color.r, _imageTrigger.color.g, _imageTrigger.color.b, _damageNow);
@@ -57,6 +51,13 @@ public class HealPlayerScript : MonoBehaviour
             if (gameObject.CompareTag("Enemy"))
             {
                 Debug.Log("Враг погиб!");
+
+                // НАЧИСЛЕНИЕ УБИЙСТВА:
+                WalletPlayer wallet = FindAnyObjectByType<WalletPlayer>();
+                if (wallet != null)
+                {
+                    wallet.RegisterKill();
+                }
 
                 // Спавним эффект на позиции врага и с его поворотом
                 if (_deathEffectPrefab != null)
